@@ -1,5 +1,6 @@
+import "./navbar.css";
 const Book = (props) => {
-  const { img, title, author, id } = props;
+  const { img, title, author, number } = props;
   // const getSingleBook = () => {
   //   getBook(id);
   // };
@@ -9,7 +10,9 @@ const Book = (props) => {
     <article className="book">
       <img src={img} alt={title} />
       <h2> {title} </h2>
-      <button>Click me</button>
+      <h2>{author}</h2>
+      <span className="number"># {number + 1}</span>
+      {/* <button>Click me</button> */}
 
       {/* <Image />
       <Title />

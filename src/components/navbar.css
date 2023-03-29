@@ -10,6 +10,15 @@
   margin: 5rem auto;
   gap: 2rem;
   grid-template-columns: 3;
+  background: #f1f5f8;
+  color: black;
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media screen and(min-width:768px) {
@@ -19,8 +28,25 @@
     padding: 2rem;
     text-align: center;
   }
+
+  .book {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .book img {
+    width: 60%;
+    object-fit: cover;
+  }
+  .book h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
 }
-img {
+
+.book img {
   width: 60%;
   object-fit: cover;
 }
@@ -40,4 +66,15 @@ button:hover {
   transition: all 0.5s ease;
   transform: scale(1.1);
   background-color: #aee68e;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: red;
 }

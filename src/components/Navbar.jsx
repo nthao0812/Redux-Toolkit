@@ -30,7 +30,7 @@ const BookList = () => {
     <section className="bookList">
       {books.map((book, index) => {
         console.log(book);
-        return <Book {...book} key={book.id} />;
+        return <Book {...book} key={book.id} number={index} />;
       })}
 
       {/* {newNames}
@@ -55,7 +55,7 @@ const BookList = () => {
 // };
 const Navbar = () => {
   return (
-    <div>
+    <>
       {/* <h3 id="something" className="someValue">
         My Second Component
       </h3>
@@ -65,7 +65,7 @@ const Navbar = () => {
         </li>
       </ul> */}
       <BookList />
-    </div>
+    </>
   );
 };
 
