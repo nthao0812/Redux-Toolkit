@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bookList {
+  display: grid;
+  max-width: 1170px;
+  margin: 5rem auto;
+  gap: 2rem;
+  grid-template-columns: 3;
+}
+
+@media screen and(min-width:768px) {
+  .bookList {
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+img {
+  width: 60%;
+  object-fit: cover;
+}
+
+.book h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  color: rgb(230, 149, 56);
+  background-color: antiquewhite;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  background-color: #aee68e;
+}
